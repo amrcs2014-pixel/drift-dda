@@ -1,0 +1,21 @@
+\begin{tabular}{@{}lcccccccc@{}}
+\toprule
+Configuration & \multicolumn{2}{c}{hard abrupt, rot.} & \multicolumn{2}{c}{hard recurring, rot.} & \multicolumn{2}{c}{UNSW-NB15} & \multicolumn{2}{c}{CICIDS2017} \\
+ & $F_1$ & steps & $F_1$ & steps & $F_1$ & steps & $F_1$ & steps \\
+\midrule
+full \drift{} & 0.588 & 1,144 & 0.734 & 550 & 0.644 & 2,037 & 0.879 & 1,355 \\
+no gating (always Tier 3) & 0.762 & 4,700 & 0.846 & 4,880 & 0.630 & 29,232 & 0.947 & 5,253 \\
+no escalation & 0.494 & 730 & 0.725 & 541 & 0.650 & 709 & 0.876 & 322 \\
+no cooldown & 0.588 & 1,144 & 0.734 & 550 & 0.644 & 2,037 & 0.879 & 1,355 \\
+no replay & 0.576 & 312 & 0.716 & 156 & 0.641 & 1,355 & 0.878 & 942 \\
+no reputation in adaptation & 0.200 & 1,386 & 0.227 & 902 & 0.416 & 9,899 & 0.458 & 1,288 \\
+count-only blacklist (GAN-DDA) & 0.588 & 1,144 & 0.734 & 550 & 0.525 & 2,370 & 0.905 & 1,330 \\
+no surge quarantine & 0.588 & 1,144 & 0.734 & 550 & 0.642 & 2,037 & 0.748 & 5,467 \\
+no representativeness guard & 0.588 & 1,144 & 0.734 & 550 & 0.642 & 2,037 & 0.879 & 2,696 \\
+no widening (v6 retrain rule) & 0.273 & 1,000 & 0.403 & 510 & 0.646 & 1,168 & 0.881 & 787 \\
+v6 threshold reset & 0.556 & 1,034 & 0.720 & 550 & 0.599 & 1,242 & 0.914 & 424 \\
+v6 rate-based severity & 0.330 & 812 & 0.361 & 273 & 0.648 & 6,080 & 0.950 & 2,952 \\
+v6 \drift{} (all v6 rules) & 0.338 & 480 & 0.498 & 320 & 0.212 & 281,588 & 0.637 & 117,896 \\
+v6 Tier-3-only baseline & 0.506 & 18,750 & 0.655 & 23,600 & -- & -- & -- & -- \\
+\bottomrule
+\end{tabular}

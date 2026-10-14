@@ -1,0 +1,49 @@
+{
+ "device": "cuda",
+ "threads": 1,
+ "machine": "AMD64",
+ "processor": "Intel64 Family 6 Model 158 Stepping 10, GenuineIntel",
+ "torch": "2.14.0+cu126",
+ "d": 50,
+ "n": 6096,
+ "epochs": 8,
+ "rows": [
+  {
+   "width": 48,
+   "params": 9091,
+   "tier1_s": 0.004589600000144856,
+   "tier2_s": 1.1883293000000776,
+   "tier3_s": 13.742220699999962,
+   "tier2_steps": 184,
+   "tier3_steps": 1288
+  },
+  {
+   "width": 128,
+   "params": 24131,
+   "tier1_s": 0.007106200000180252,
+   "tier2_s": 1.2576229999999669,
+   "tier3_s": 13.990582999999788,
+   "tier2_steps": 184,
+   "tier3_steps": 1288
+  },
+  {
+   "width": 512,
+   "params": 358979,
+   "tier1_s": 0.011363300000084564,
+   "tier2_s": 1.220556299999771,
+   "tier3_s": 14.47784989999991,
+   "tier2_steps": 184,
+   "tier3_steps": 1288
+  },
+  {
+   "width": 1024,
+   "params": 1242179,
+   "tier1_s": 0.021637400000145135,
+   "tier2_s": 1.2979567999996107,
+   "tier3_s": 15.203758999999991,
+   "tier2_steps": 184,
+   "tier3_steps": 1288
+  }
+ ],
+ "gpu": "NVIDIA GeForce GTX 1060"
+}

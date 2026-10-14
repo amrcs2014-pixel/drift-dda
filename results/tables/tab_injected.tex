@@ -1,0 +1,12 @@
+\begin{tabular}{@{}lccccc@{}}
+\toprule
+Policy & pre-drift $F_1$ & post-drift $F_1$ & contamination & coverage loss & steps \\
+\midrule
+static & 0.759{\,\scriptsize$\pm$0.013} & 0.617{\,\scriptsize$\pm$0.078} & -- & -- & 0 \\
+Tier-1 only & 0.768{\,\scriptsize$\pm$0.016} & 0.624{\,\scriptsize$\pm$0.103} & 0.085{\,\scriptsize$\pm$0.028} & 0.229{\,\scriptsize$\pm$0.043} & 0 \\
+Tier-3 only & 0.747{\,\scriptsize$\pm$0.045} & 0.334{\,\scriptsize$\pm$0.129} & 0.139{\,\scriptsize$\pm$0.033} & 0.203{\,\scriptsize$\pm$0.046} & 3,080 \\
+\drift{}, no widening & 0.768{\,\scriptsize$\pm$0.016} & 0.585{\,\scriptsize$\pm$0.097} & 0.084{\,\scriptsize$\pm$0.019} & 0.225{\,\scriptsize$\pm$0.037} & 395 \\
+\drift{} & 0.768{\,\scriptsize$\pm$0.016} & 0.644{\,\scriptsize$\pm$0.066} & 0.080{\,\scriptsize$\pm$0.026} & 0.221{\,\scriptsize$\pm$0.040} & 351 \\
+\drift{}, no reputation & 0.547{\,\scriptsize$\pm$0.107} & 0.092{\,\scriptsize$\pm$0.034} & 0.195{\,\scriptsize$\pm$0.015} & 0.134{\,\scriptsize$\pm$0.021} & 698 \\
+\bottomrule
+\end{tabular}

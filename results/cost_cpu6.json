@@ -1,0 +1,48 @@
+{
+ "device": "cpu",
+ "threads": 6,
+ "machine": "AMD64",
+ "processor": "Intel64 Family 6 Model 158 Stepping 10, GenuineIntel",
+ "torch": "2.14.0+cu126",
+ "d": 50,
+ "n": 6096,
+ "epochs": 8,
+ "rows": [
+  {
+   "width": 48,
+   "params": 9091,
+   "tier1_s": 0.003440299999965646,
+   "tier2_s": 0.5780383000001166,
+   "tier3_s": 6.410588499999903,
+   "tier2_steps": 184,
+   "tier3_steps": 1288
+  },
+  {
+   "width": 128,
+   "params": 24131,
+   "tier1_s": 0.005393999999796506,
+   "tier2_s": 0.7473967999999331,
+   "tier3_s": 7.513784400000077,
+   "tier2_steps": 184,
+   "tier3_steps": 1288
+  },
+  {
+   "width": 512,
+   "params": 358979,
+   "tier1_s": 0.03834099999994578,
+   "tier2_s": 1.4464514999999665,
+   "tier3_s": 12.502880000000005,
+   "tier2_steps": 184,
+   "tier3_steps": 1288
+  },
+  {
+   "width": 1024,
+   "params": 1242179,
+   "tier1_s": 0.09091090000038093,
+   "tier2_s": 2.5641780999999355,
+   "tier3_s": 21.593976399999974,
+   "tier2_steps": 184,
+   "tier3_steps": 1288
+  }
+ ]
+}
